@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(227, 130, 227),rgb(105, 105, 204));
+    -webkit-background-clip: text; /* for WebKit/Blink browsers (Chrome, Safari) */
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    background: linear-gradient(rgb(227, 130, 227),rgb(105, 105, 204));
+    margin: 20px 300px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.searchbar input{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    height: 60px;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.searchbar button{
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    border-radius: 50%;
+    height: 60px;
+    margin-top: 20px;
+
+}
+.searchbutton{
+    height: 20px;
+}
+
+.weather{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+}
+.description{
+    color: white;
+    text-align: center;
+}
+.humidity_wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+.humidity_wind img{
+    margin-bottom: 30px;
+}
+.humidity {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Optional: Center child elements horizontally */
+}
+.wind
+{
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center;
+}
+.humidity_wind h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.humidity_wind h4{
+    color: white;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 10px;
+    padding: 20px;
+    margin-top: 0;
+
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: white;
+
+}
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    .card{
+        margin: 10px 10px;
+    border-radius: 10px;
+    }
+    .searchbar input{
+        border-radius: 30px;
+        height: 50px;
+        margin-right: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+.WEATHER{
+    display: none;
+}
+
